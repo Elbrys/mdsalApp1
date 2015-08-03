@@ -11,6 +11,16 @@ that supports a remote procedure call (RPC).  It contains the bare minimum set o
 	1. Add logic to the skeleton so that it actually responds to RPC calls.
 	1. Install it into an OpenDaylight controller including the Brocade SDN Controller 1.3.0
 
+### Prerequisites
+1. OpenDaylight enabled SDN controller such as the Brocade SDN Controller.  This has been tested with Helium release of OpenDaylight as well as Brocade SDN Controller 1.3.0
+2. Maven
+
+### Step 0:  Clone this repository to your machine (virtual machine) where you run OpenDaylight enabled SDN controller
+
+	```bash
+	git clone https://github.com/Elbrys/mdsalApp1.git
+	```
+	
 ### Step 1:  ExampleApp File Review
 First, just look through the skeleton folders/files of ExampleApp.  This is the bare minimum set of folders/files we need in order to get OpenDaylight to auto-generate a lot of other files for us. 
 
