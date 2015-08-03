@@ -17,9 +17,9 @@ that supports a remote procedure call (RPC).  It contains the bare minimum set o
 
 ### Step 0:  Clone this repository to your machine (virtual machine) where you run OpenDaylight enabled SDN controller
 
-	```bash
-	git clone https://github.com/Elbrys/mdsalApp1.git
-	```
+```bash
+git clone https://github.com/Elbrys/mdsalApp1.git
+```
 	
 ### Step 1:  ExampleApp File Review
 First, just look through the skeleton folders/files of ExampleApp.  This is the bare minimum set of folders/files we need in order to get OpenDaylight to auto-generate a lot of other files for us. 
