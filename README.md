@@ -315,14 +315,14 @@ mvn clean install
 
 You should see output something like this:
 
-	```bash
-	2015-06-16 17:17:35,544 | INFO  | Local user karaf | FeaturesServiceImpl              | 24 - org.apache.karaf.features.core - 3.0.1 | Installing feature exampleapp 1.0.0-SNAPSHOT
-	2015-06-16 17:17:35,872 | INFO  | Local user karaf | FeaturesServiceImpl              | 24 - org.apache.karaf.features.core - 3.0.1 | Installing feature exampleapp-api 1.0.0-SNAPSHOT
-	2015-06-16 17:17:38,629 | INFO  | config-pusher    | ExampleappModule                 | 292 - com.elbrys.sdn.exampleapp-impl - 1.0.0.SNAPSHOT | ExampleappModule Create Instance.
-	2015-06-16 17:17:38,630 | INFO  | config-pusher    | ExampleappImpl                   | 292 - com.elbrys.sdn.exampleapp-impl - 1.0.0.SNAPSHOT | ExampleAppImpl contructor
-	2015-06-16 17:17:38,630 | INFO  | config-pusher    | ExampleappModule                 | 292 - com.elbrys.sdn.exampleapp-impl - 1.0.0.SNAPSHOT | ExampleappModule Regiser RPC.
-	2015-06-16 17:17:38,634 | INFO  | config-pusher    | ExampleappImpl                   | 292 - com.elbrys.sdn.exampleapp-impl - 1.0.0.SNAPSHOT | ExampleAppImpl onSessionInitialized
-	```
+```bash
+2015-06-16 17:17:35,544 | INFO  | Local user karaf | FeaturesServiceImpl              | 24 - org.apache.karaf.features.core - 3.0.1 | Installing feature exampleapp 1.0.0-SNAPSHOT
+2015-06-16 17:17:35,872 | INFO  | Local user karaf | FeaturesServiceImpl              | 24 - org.apache.karaf.features.core - 3.0.1 | Installing feature exampleapp-api 1.0.0-SNAPSHOT
+2015-06-16 17:17:38,629 | INFO  | config-pusher    | ExampleappModule                 | 292 - com.elbrys.sdn.exampleapp-impl - 1.0.0.SNAPSHOT | ExampleappModule Create Instance.
+2015-06-16 17:17:38,630 | INFO  | config-pusher    | ExampleappImpl                   | 292 - com.elbrys.sdn.exampleapp-impl - 1.0.0.SNAPSHOT | ExampleAppImpl contructor
+2015-06-16 17:17:38,630 | INFO  | config-pusher    | ExampleappModule                 | 292 - com.elbrys.sdn.exampleapp-impl - 1.0.0.SNAPSHOT | ExampleappModule Regiser RPC.
+2015-06-16 17:17:38,634 | INFO  | config-pusher    | ExampleappImpl                   | 292 - com.elbrys.sdn.exampleapp-impl - 1.0.0.SNAPSHOT | ExampleAppImpl onSessionInitialized
+```
 
 ### Step 7: Test your ExampleApp
 
