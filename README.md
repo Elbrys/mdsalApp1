@@ -40,27 +40,27 @@ mvn clean install
 Observe that the following java files are auto-generated for you based on the information in the above files.
 
 ```bash
-*. ./exampleapp-api/src/main/yang-gen-sal/org/opendaylight/yang/gen/v1/urn/opendaylight/params/xml/ns/yang/exampleapp/api/rev150617/ExampleAppOutputBuilder.java
-*. ./exampleapp-api/src/main/yang-gen-sal/org/opendaylight/yang/gen/v1/urn/opendaylight/params/xml/ns/yang/exampleapp/api/rev150617/ExampleAppInput.java
-*. ./exampleapp-api/src/main/yang-gen-sal/org/opendaylight/yang/gen/v1/urn/opendaylight/params/xml/ns/yang/exampleapp/api/rev150617/ExampleAppInputBuilder.java
-*. ./exampleapp-api/src/main/yang-gen-sal/org/opendaylight/yang/gen/v1/urn/opendaylight/params/xml/ns/yang/exampleapp/api/rev150617/ExampleAppOutput.java
-*. ./exampleapp-api/src/main/yang-gen-sal/org/opendaylight/yang/gen/v1/urn/opendaylight/params/xml/ns/yang/exampleapp/api/rev150617/$YangModelBindingProvider.java
-*. ./exampleapp-api/src/main/yang-gen-sal/org/opendaylight/yang/gen/v1/urn/opendaylight/params/xml/ns/yang/exampleapp/api/rev150617/ExampleappService.java
-*. ./exampleapp-api/src/main/yang-gen-sal/org/opendaylight/yang/gen/v1/urn/opendaylight/params/xml/ns/yang/exampleapp/api/rev150617/$YangModuleInfoImpl.java
-*. ./exampleapp-impl/src/main/yang-gen-sal/org/opendaylight/yang/gen/v1/urn/opendaylight/params/xml/ns/yang/exampleapp/impl/rev150617/Exampleapp.java
-*. ./exampleapp-impl/src/main/yang-gen-sal/org/opendaylight/yang/gen/v1/urn/opendaylight/params/xml/ns/yang/exampleapp/impl/rev150617/$YangModelBindingProvider.java
-*. ./exampleapp-impl/src/main/yang-gen-sal/org/opendaylight/yang/gen/v1/urn/opendaylight/params/xml/ns/yang/exampleapp/impl/rev150617/$YangModuleInfoImpl.java
-*. ./exampleapp-impl/src/main/yang-gen-sal/org/opendaylight/yang/gen/v1/urn/opendaylight/params/xml/ns/yang/exampleapp/impl/rev150617/modules/module/configuration/ExampleappBuilder.java
-*. ./exampleapp-impl/src/main/yang-gen-sal/org/opendaylight/yang/gen/v1/urn/opendaylight/params/xml/ns/yang/exampleapp/impl/rev150617/modules/module/configuration/Exampleapp.java
-*. ./exampleapp-impl/src/main/yang-gen-sal/org/opendaylight/yang/gen/v1/urn/opendaylight/params/xml/ns/yang/exampleapp/impl/rev150617/modules/module/configuration/exampleapp/BrokerBuilder.java
-*. ./exampleapp-impl/src/main/yang-gen-sal/org/opendaylight/yang/gen/v1/urn/opendaylight/params/xml/ns/yang/exampleapp/impl/rev150617/modules/module/configuration/exampleapp/Broker.java
-*. ./exampleapp-impl/src/main/yang-gen-sal/org/opendaylight/yang/gen/v1/urn/opendaylight/params/xml/ns/yang/exampleapp/impl/rev150617/modules/module/configuration/exampleapp/RpcRegistryBuilder.java
-*. ./exampleapp-impl/src/main/yang-gen-sal/org/opendaylight/yang/gen/v1/urn/opendaylight/params/xml/ns/yang/exampleapp/impl/rev150617/modules/module/configuration/exampleapp/RpcRegistry.java
-*. ./exampleapp-impl/src/main/java/org/opendaylight/yang/gen/v1/urn/opendaylight/params/xml/ns/yang/exampleapp/impl/rev150617/ExampleappModule.java
-*. ./exampleapp-impl/src/main/java/org/opendaylight/yang/gen/v1/urn/opendaylight/params/xml/ns/yang/exampleapp/impl/rev150617/ExampleappModuleFactory.java
-*. ./exampleapp-impl/src/main/yang-gen-config/org/opendaylight/yang/gen/v1/urn/opendaylight/params/xml/ns/yang/exampleapp/impl/rev150617/AbstractExampleappModuleFactory.java
-*. ./exampleapp-impl/src/main/yang-gen-config/org/opendaylight/yang/gen/v1/urn/opendaylight/params/xml/ns/yang/exampleapp/impl/rev150617/ExampleappModuleMXBean.java
-*. ./exampleapp-impl/src/main/yang-gen-config/org/opendaylight/yang/gen/v1/urn/opendaylight/params/xml/ns/yang/exampleapp/impl/rev150617/AbstractExampleappModule.java
+./exampleapp-api/src/main/yang-gen-sal/org/opendaylight/yang/gen/v1/urn/opendaylight/params/xml/ns/yang/exampleapp/api/rev150617/ExampleAppOutputBuilder.java
+./exampleapp-api/src/main/yang-gen-sal/org/opendaylight/yang/gen/v1/urn/opendaylight/params/xml/ns/yang/exampleapp/api/rev150617/ExampleAppInput.java
+./exampleapp-api/src/main/yang-gen-sal/org/opendaylight/yang/gen/v1/urn/opendaylight/params/xml/ns/yang/exampleapp/api/rev150617/ExampleAppInputBuilder.java
+./exampleapp-api/src/main/yang-gen-sal/org/opendaylight/yang/gen/v1/urn/opendaylight/params/xml/ns/yang/exampleapp/api/rev150617/ExampleAppOutput.java
+./exampleapp-api/src/main/yang-gen-sal/org/opendaylight/yang/gen/v1/urn/opendaylight/params/xml/ns/yang/exampleapp/api/rev150617/$YangModelBindingProvider.java
+./exampleapp-api/src/main/yang-gen-sal/org/opendaylight/yang/gen/v1/urn/opendaylight/params/xml/ns/yang/exampleapp/api/rev150617/ExampleappService.java
+./exampleapp-api/src/main/yang-gen-sal/org/opendaylight/yang/gen/v1/urn/opendaylight/params/xml/ns/yang/exampleapp/api/rev150617/$YangModuleInfoImpl.java
+./exampleapp-impl/src/main/yang-gen-sal/org/opendaylight/yang/gen/v1/urn/opendaylight/params/xml/ns/yang/exampleapp/impl/rev150617/Exampleapp.java
+./exampleapp-impl/src/main/yang-gen-sal/org/opendaylight/yang/gen/v1/urn/opendaylight/params/xml/ns/yang/exampleapp/impl/rev150617/$YangModelBindingProvider.java
+./exampleapp-impl/src/main/yang-gen-sal/org/opendaylight/yang/gen/v1/urn/opendaylight/params/xml/ns/yang/exampleapp/impl/rev150617/$YangModuleInfoImpl.java
+./exampleapp-impl/src/main/yang-gen-sal/org/opendaylight/yang/gen/v1/urn/opendaylight/params/xml/ns/yang/exampleapp/impl/rev150617/modules/module/configuration/ExampleappBuilder.java
+./exampleapp-impl/src/main/yang-gen-sal/org/opendaylight/yang/gen/v1/urn/opendaylight/params/xml/ns/yang/exampleapp/impl/rev150617/modules/module/configuration/Exampleapp.java
+./exampleapp-impl/src/main/yang-gen-sal/org/opendaylight/yang/gen/v1/urn/opendaylight/params/xml/ns/yang/exampleapp/impl/rev150617/modules/module/configuration/exampleapp/BrokerBuilder.java
+./exampleapp-impl/src/main/yang-gen-sal/org/opendaylight/yang/gen/v1/urn/opendaylight/params/xml/ns/yang/exampleapp/impl/rev150617/modules/module/configuration/exampleapp/Broker.java
+./exampleapp-impl/src/main/yang-gen-sal/org/opendaylight/yang/gen/v1/urn/opendaylight/params/xml/ns/yang/exampleapp/impl/rev150617/modules/module/configuration/exampleapp/RpcRegistryBuilder.java
+./exampleapp-impl/src/main/yang-gen-sal/org/opendaylight/yang/gen/v1/urn/opendaylight/params/xml/ns/yang/exampleapp/impl/rev150617/modules/module/configuration/exampleapp/RpcRegistry.java
+./exampleapp-impl/src/main/java/org/opendaylight/yang/gen/v1/urn/opendaylight/params/xml/ns/yang/exampleapp/impl/rev150617/ExampleappModule.java
+./exampleapp-impl/src/main/java/org/opendaylight/yang/gen/v1/urn/opendaylight/params/xml/ns/yang/exampleapp/impl/rev150617/ExampleappModuleFactory.java
+./exampleapp-impl/src/main/yang-gen-config/org/opendaylight/yang/gen/v1/urn/opendaylight/params/xml/ns/yang/exampleapp/impl/rev150617/AbstractExampleappModuleFactory.java
+./exampleapp-impl/src/main/yang-gen-config/org/opendaylight/yang/gen/v1/urn/opendaylight/params/xml/ns/yang/exampleapp/impl/rev150617/ExampleappModuleMXBean.java
+./exampleapp-impl/src/main/yang-gen-config/org/opendaylight/yang/gen/v1/urn/opendaylight/params/xml/ns/yang/exampleapp/impl/rev150617/AbstractExampleappModule.java
 ```
 
 ### Step 3 (optional):  Create an Eclipse project if you prefer to use Eclipse.
