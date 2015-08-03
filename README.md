@@ -1,14 +1,18 @@
 # mdsalApp1
+This repository is intended to teach you some very basic concepts around creating an MD-SAL application for OpenDaylight enabled SDN controllers.  It may seem complex at first, but remember that OpenDaylight is a platform that allows numerous individuals and companies to contribute features simultaneously with very little interaction between those teams.  This means that beating at the heart of OpenDaylight is an engine to keep all the features separate, but able to communicate data to one another as necessary.  When you create an application for OpenDaylight it is one small piece of a much larger system.  As such, when an application is created there are many points between your application and the OpenDaylight engine that need to be 'wired up'.  The good news is that most of these connections can be done automatically for you, but they all require numerous Java classes and boiler plate code, all of which is part of your application...even if you never need to touch it.  So, the trick to creating MD-SAL applications is 1) know how to get all the connections and associated code to be created automatically for you and 2) know exactly which files you *do* need to modify and why.  This aims to walk you through that process so you can learn a few tricks.  It will take a few more before you are good at it, but we all start at the beginning.
+
+The ExampleApp in this repository will provide a remote procedure call, available via RESTCONF, that allows you to set a bandwidth configuration.
+
 This repository contains:
 
 1. A set of folders that is the skeleton for an OpenDaylight MD-SAL application
-that supports a remote procedure call (RPC).
+that supports a remote procedure call (RPC).  It contains the bare minimum set of files you need in order to get OpenDaylight to generate all the connections for your application.  Note, we do not use an archetype tool to generate these, we just give them to you in this repository.  In a later tutorial we will introduce the archetype tool.
 1. This README.md that walks you through a tutorial to:
 	1. Add logic to the skeleton so that it actually responds to RPC calls.
 	1. Install it into an OpenDaylight controller including the Brocade SDN Controller 1.3.0
 
 ### Step 1:  ExampleApp File Review
-First, just look through the skeleton folders/files of ExampleApp.  There are several key folders and files you need to understand.
+First, just look through the skeleton folders/files of ExampleApp.  This is the bare minimum set of folders/files we need in order to get OpenDaylight to auto-generate a lot of other files for us. 
 
 
 1. Yang
@@ -19,7 +23,7 @@ First, just look through the skeleton folders/files of ExampleApp.  There are se
 	1. Dependencies
 		1. exampleapp-impl/src/main/yang/exampleapp-impl.yang
    		1. This yang file defines the modules on which the exampleapp is dependent:
-			1. binding-rpc-registry: RPS registration to allow bandwidth configuration
+			1. binding-rpc-registry: RPC registration to allow bandwidth configuration
 			1. binding-broker-osgi-registryDat broker Used for consumer registration.
 1. Config
 	1. exampleapp-config/src/main/resources/initial/49-exampleapp-sample.xml
@@ -37,7 +41,7 @@ Go ahead and do a build on the project.  This will cause auto-generation of many
 mvn clean install 
 ```
 
-Observe that the following java files are auto-generated for you based on the information in the above files.
+Observe that the following java files are auto-generated for you based on the information in the original set files (above).
 
 ```bash
 ./exampleapp-api/src/main/yang-gen-sal/org/opendaylight/yang/gen/v1/urn/opendaylight/params/xml/ns/yang/exampleapp/api/rev150617/ExampleAppOutputBuilder.java
@@ -73,18 +77,21 @@ mvn eclipse:eclipse
 Once the project is created, open Eclipse and import the project into an Eclipse workspace.
 
 ### Step 4:  Modify created Java files
-The auto-generated files will need some modification to implement the actual logic for your application.  The skeleton connects all the parts, but does not know what to actually do to make your application do its core logic.  You need to know the places to change and then make those changes.
+The auto-generated files will need some modification to implement the actual logic for your application.  Remember, those files just wire your application into OpenDaylight.  You still need to actually write your application code that makes it do something unique.  The key to doing that is knowing which of the auto-generated files you need to modify.  The skeleton connects all the parts, but does not know what to actually do to make your application do its core logic.  You need to know the places to change and then make those changes.
 
 1. create package com.elbrys.sdn.impl in exampleapp-impl/src/main/java
+
 	```bash
 	cd exampleapp-impl/src/main/java
 	mkdir -p com/elbrys/sdn/impl
 	```
 1. create an empty file named ExampleappImpl.java in the new folder
+
 	```bash
 	touch ExampleappImpl.java
 	```
 1. copy this into ExampleappImpl.java
+
 	```java
 package com.elbrys.sdn.impl;
 
