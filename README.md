@@ -279,27 +279,27 @@ mvn clean install
 
 1. copy ~/.m2/repository/com/elbrys/sdn/exampleapp-features/1.0.0-SNAPSHOT/exampleapp-features-1.0.0-SNAPSHOT-features.xml to deploy folder in BVC
 
-```bash
-cp ~/.m2/repository/com/elbrys/sdn/exampleapp-features/1.0.0-SNAPSHOT/exampleapp-features-1.0.0-SNAPSHOT-features.xml
-```
+	```bash
+	cp ~/.m2/repository/com/elbrys/sdn/exampleapp-features/1.0.0-SNAPSHOT/exampleapp-features-1.0.0-SNAPSHOT-features.xml
+	```
 
 1. run OpenDaylight (Brocade SDN Controller)
 
-```bash
-/opt/bvc/bin/start
-```
+	```bash
+	/opt/bvc/bin/start
+	```
 
 1. run Karaf console 
 
-```bash
-/opt/bvc/bin/client
-```
+	```bash
+	/opt/bvc/bin/client
+	```
 
 1. verify that your ExampleApp feature is running by entering this command in the Karaf console
 
-```bash
-feature:list|grep xamp
-```
+	```bash
+	feature:list|grep xamp
+	```
 
 1. If the feature is not running then install it by entering this command in the Karaf console
 
@@ -309,20 +309,20 @@ feature:list|grep xamp
     
 1. Verify that the log contains lines in it from ExampleApp by entering this command in the Karaf console
 
-```bash
-log:details |grep xam
-```
+	```bash
+	log:details |grep xam
+	```
 
 You should see output something like this:
 
-```bash
-2015-06-16 17:17:35,544 | INFO  | Local user karaf | FeaturesServiceImpl              | 24 - org.apache.karaf.features.core - 3.0.1 | Installing feature exampleapp 1.0.0-SNAPSHOT
-2015-06-16 17:17:35,872 | INFO  | Local user karaf | FeaturesServiceImpl              | 24 - org.apache.karaf.features.core - 3.0.1 | Installing feature exampleapp-api 1.0.0-SNAPSHOT
-2015-06-16 17:17:38,629 | INFO  | config-pusher    | ExampleappModule                 | 292 - com.elbrys.sdn.exampleapp-impl - 1.0.0.SNAPSHOT | ExampleappModule Create Instance.
-2015-06-16 17:17:38,630 | INFO  | config-pusher    | ExampleappImpl                   | 292 - com.elbrys.sdn.exampleapp-impl - 1.0.0.SNAPSHOT | ExampleAppImpl contructor
-2015-06-16 17:17:38,630 | INFO  | config-pusher    | ExampleappModule                 | 292 - com.elbrys.sdn.exampleapp-impl - 1.0.0.SNAPSHOT | ExampleappModule Regiser RPC.
-2015-06-16 17:17:38,634 | INFO  | config-pusher    | ExampleappImpl                   | 292 - com.elbrys.sdn.exampleapp-impl - 1.0.0.SNAPSHOT | ExampleAppImpl onSessionInitialized
-```
+	```bash
+	2015-06-16 17:17:35,544 | INFO  | Local user karaf | FeaturesServiceImpl              | 24 - org.apache.karaf.features.core - 3.0.1 | Installing feature exampleapp 1.0.0-SNAPSHOT
+	2015-06-16 17:17:35,872 | INFO  | Local user karaf | FeaturesServiceImpl              | 24 - org.apache.karaf.features.core - 3.0.1 | Installing feature exampleapp-api 1.0.0-SNAPSHOT
+	2015-06-16 17:17:38,629 | INFO  | config-pusher    | ExampleappModule                 | 292 - com.elbrys.sdn.exampleapp-impl - 1.0.0.SNAPSHOT | ExampleappModule Create Instance.
+	2015-06-16 17:17:38,630 | INFO  | config-pusher    | ExampleappImpl                   | 292 - com.elbrys.sdn.exampleapp-impl - 1.0.0.SNAPSHOT | ExampleAppImpl contructor
+	2015-06-16 17:17:38,630 | INFO  | config-pusher    | ExampleappModule                 | 292 - com.elbrys.sdn.exampleapp-impl - 1.0.0.SNAPSHOT | ExampleappModule Regiser RPC.
+	2015-06-16 17:17:38,634 | INFO  | config-pusher    | ExampleappImpl                   | 292 - com.elbrys.sdn.exampleapp-impl - 1.0.0.SNAPSHOT | ExampleAppImpl onSessionInitialized
+	```
 
 ### Step 7: Test your ExampleApp
 
@@ -330,29 +330,29 @@ You should see output something like this:
 1.  goto exampleApp, open its list of operations by clicking on it
 1.  select post and enter this as the JSON body
 
-```json
- {"exampleapp:input":{"bandwidth":"101"}}
- ```
+	```json
+	 {"exampleapp:input":{"bandwidth":"101"}}
+	 ```
  
 1.  click 'Try It'
 1.  verify that the returned response body is something like this
 
-```json
-    {
-      "output": {
-        "bandwidth": 101
-      }
-    }
-```
+	```json
+	    {
+	      "output": {
+	        "bandwidth": 101
+	      }
+	    }
+	```
 
 1. Verify log has an entry output by your application by entering this command in Karaf console
 
-```bash
-log:display |grep xam|grep Rpc
-```
+	```bash
+	log:display |grep xam|grep Rpc
+	```
 
 1. You should see the following log entry
 
-```bash
-2015-06-16 17:18:52,865 | INFO  | qtp250359406-489 | ExampleappImpl                   | 292 - com.elbrys.sdn.exampleapp-impl - 1.0.0.SNAPSHOT | ExampleAppImpl exampleRpc
-```
+	```bash
+	2015-06-16 17:18:52,865 | INFO  | qtp250359406-489 | ExampleappImpl                   | 292 - com.elbrys.sdn.exampleapp-impl - 1.0.0.SNAPSHOT | ExampleAppImpl exampleRpc
+	```
