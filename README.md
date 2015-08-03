@@ -358,7 +358,7 @@ You should see output something like this:
 	log:display |grep xam|grep Rpc
 	```
 
-1. You should see the following log entry
+1. You should see the following log entry.  If you check the code in "exampleapp-impl/src/main/java/com/elbrys/sdn/implExampleappImpl.java" you wil find a Log.info() call that outputs 'ExampleAppImpl exampleRpc'
 
 	```bash
 	2015-06-16 17:18:52,865 | INFO  | qtp250359406-489 | ExampleappImpl                   | 292 - com.elbrys.sdn.exampleapp-impl - 1.0.0.SNAPSHOT | ExampleAppImpl exampleRpc
